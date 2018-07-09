@@ -60,7 +60,16 @@ django-admin startproject hello
 
 5. vi /etc/httpd/conf.d/hello.conf
 ```
-WSGIScriptAlias / /var/www/django/hello/hello/wsgi.py
+<VirtualHost *:80>
+   ServerName localhost
+   ServerAlias localhost
+   DocumentRoot /var/www/html
+   ErrorLog /var/log/app.error.log
+   CustomLog /var/log/app.access.log combined
+   WSGIDaemonProcess django python-path=/var/www/django/env/lib/python3.6/site-packages
+   WSGIProcessGroup django
+   WSGIScriptAlias / /var/www/django/hello/hello/wsgi.py
+</VirtualHost>
 ```
 
 6. service httpd restart
