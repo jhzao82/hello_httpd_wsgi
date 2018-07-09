@@ -1,5 +1,7 @@
 # hello_httpd_wsgi
 
+centos+apache+mod_wsgi+python
+
 1. yum install httpd mod_wsgi
 
 2. vi /etc/httpd/conf/httpd.conf
