@@ -9,10 +9,9 @@ centos+apache+mod_wsgi+python
 <VirtualHost *:80>
    ServerName localhost
    ServerAlias localhost
-   ServerAdmin username@example.com
    DocumentRoot /var/www/html
-   ErrorLog /var/log/error.log
-   CustomLog /var/log/access.log combined
+   ErrorLog /var/log/app.error.log
+   CustomLog /var/log/app.access.log combined
    WSGIScriptAlias / /var/www/html/app.wsgi
 </VirtualHost>
 ```
