@@ -1,6 +1,6 @@
 # hello_httpd_wsgi
 
-1. yum install httpd python-setuptools mod_wsgi
+1. yum install httpd mod_wsgi
 
 2. vi /etc/httpd/conf/httpd.conf
 ```
