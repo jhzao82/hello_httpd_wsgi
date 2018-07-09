@@ -1,6 +1,6 @@
 # hello_httpd_wsgi
 
-centos7+apache+mod_wsgi+python3.6
+centos7+apache2.4+mod_wsgi+python3.6
 
 1. 
 ```
