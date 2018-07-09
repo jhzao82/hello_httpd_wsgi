@@ -66,7 +66,7 @@ django-admin startproject hello
    DocumentRoot /var/www/html
    ErrorLog /var/log/app.error.log
    CustomLog /var/log/app.access.log combined
-   WSGIDaemonProcess django python-path=/var/www/django/env/lib/python3.6/site-packages
+   WSGIDaemonProcess django python-path=/var/www/django/hello:/var/www/django/env/lib/python3.6/site-packages
    WSGIProcessGroup django
    WSGIScriptAlias / /var/www/django/hello/hello/wsgi.py
 </VirtualHost>
