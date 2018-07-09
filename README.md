@@ -6,7 +6,10 @@ centos7+apache+mod_wsgi+python3.6
 ```
 yum install httpd mod_wsgi
 yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-RUN yum -y install httpd24u-2.4.33-3.ius.centos7 python36u-3.6.5-1.ius.centos7 python36u-mod_wsgi-4.6.2-1.ius.centos7 python36u-pip-9.0.1-1.ius.centos7
+yum -y install httpd24u-2.4.33-3.ius.centos7 \
+python36u-3.6.5-1.ius.centos7 \
+python36u-mod_wsgi-4.6.2-1.ius.centos7 \
+python36u-pip-9.0.1-1.ius.centos7
 ```
 
 2. vi /etc/httpd/conf/httpd.conf
