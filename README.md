@@ -47,7 +47,6 @@ def application(environ, start_response):
 ```
 ln -fs /usr/bin/python3.6 /usr/bin/python3
 ln -fs /usr/bin/pip3.6 /usr/bin/pip3
-
 pip3 install --upgrade pip
 pip3 install virtualenv
 mkdir /var/www/django
