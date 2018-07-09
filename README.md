@@ -42,3 +42,25 @@ def application(environ, start_response):
 ```
 
 4. service httpd start
+
+5. django install
+```
+ln -fs /usr/bin/python3.6 /usr/bin/python3
+ln -fs /usr/bin/pip3.6 /usr/bin/pip3
+
+pip3 install --upgrade pip
+pip3 install virtualenv
+mkdir /var/www/django
+cd /var/www/django
+virtualenv env
+source env/bin/activate
+pip3 install django
+django-admin startproject hello
+```
+
+5. vi /etc/httpd/conf/httpd.conf
+```
+WSGIScriptAlias / /var/www/django/hello/hello/wsgi.py
+```
+
+6. service httpd restart
