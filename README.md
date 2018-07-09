@@ -1,8 +1,9 @@
-"# hello_httpd_wsgi" 
+# hello_httpd_wsgi
 
 1. yum install httpd python-setuptools mod_wsgi
 
 2. vi /etc/httpd/conf/httpd.conf
+```
 <VirtualHost *:80>
    ServerName localhost
    ServerAlias localhost
@@ -12,8 +13,10 @@
    CustomLog /var/log/access.log combined
    WSGIScriptAlias / /var/www/html/app.wsgi
 </VirtualHost>
+```
 
 3. vi /var/www/html/app.wsgi
+```
 import sys
 sys.path.append('/var/www/html')
 def application(environ, start_response):
@@ -23,3 +26,4 @@ def application(environ, start_response):
                         ('Content-Length', str(len(output)))]
     start_response(status, response_headers)
     return [output]
+```
