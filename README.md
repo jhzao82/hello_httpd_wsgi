@@ -1,6 +1,6 @@
 # hello_httpd_wsgi
 
-centos7+apache2.4+mod_wsgi+python3.6
+centos7+apache2.4+mod_wsgi4.6+python3.6
 
 1. install httpd mod_wsgi
 ```
