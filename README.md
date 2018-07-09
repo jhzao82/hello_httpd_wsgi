@@ -7,6 +7,8 @@ centos7+apache2.4+mod_wsgi4.6+python3.6
 yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 yum -y install httpd24u-2.4.33-3.ius.centos7 \
 python36u-3.6.5-1.ius.centos7 \
+python36u-devel-3.6.5-1.ius.centos7.x86_64.rpm \
+python36u-libs-3.6.5-1.ius.centos7.x86_64.rpm \
 python36u-mod_wsgi-4.6.2-1.ius.centos7 \
 python36u-pip-9.0.1-1.ius.centos7
 ```
