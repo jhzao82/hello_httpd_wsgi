@@ -4,8 +4,11 @@ centos7+apache2.4+mod_wsgi4.6+python3.6
 
 1. install httpd mod_wsgi
 ```
-yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-yum -y install httpd24u-2.4.33-3.ius.centos7 \
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -Uvh https://centos7.iuscommunity.org/ius-release.rpm
+yum -y install httpd24u.x86_64 0:2.4.33-3.ius.centos7 \
+httpd24u-mod_ssl-2.4.33-3.ius.centos7 \
+httpd24u-tools.x86_64 0:2.4.33-3.ius.centos7 \
 python36u-3.6.5-1.ius.centos7 \
 python36u-devel-3.6.5-1.ius.centos7 \
 python36u-libs-3.6.5-1.ius.centos7 \
