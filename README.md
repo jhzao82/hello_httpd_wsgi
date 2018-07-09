@@ -16,7 +16,7 @@ python36u-mod_wsgi-4.6.2-1.ius.centos7 \
 python36u-pip-9.0.1-1.ius.centos7
 ```
 
-2. vi /etc/httpd/conf/httpd.conf
+2. vi /etc/httpd/conf.d/hello.conf
 ```
 <VirtualHost *:80>
    ServerName localhost
@@ -58,7 +58,7 @@ pip3 install django
 django-admin startproject hello
 ```
 
-5. vi /etc/httpd/conf/httpd.conf
+5. vi /etc/httpd/conf.d/hello.conf
 ```
 WSGIScriptAlias / /var/www/django/hello/hello/wsgi.py
 ```
